@@ -1,10 +1,237 @@
-body{
+:root {
+    --bg-page: #f8fafc;
+    --bg-card: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --border-color: #e2e8f0;
+    --danger-bg: #fef2f2;
+    --danger-text: #dc2626;
+    --danger-border: #fecaca;
+    --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    padding: 2.5rem 1.5rem;
+    gap: 1.75rem;
 }
-.invalid{
-    color:red;
+
+/* Filter Bar (form) */
+form {
+    width: 100%;
+    max-width: 1200px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+form select {
+    padding: 0.55rem 0.85rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #f8fafc;
+    color: var(--text-main);
+    font-size: 0.9rem;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+form select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+form label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    user-select: none;
+    margin-right: auto;
+}
+
+form input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+form button[type="submit"] {
+    padding: 0.55rem 1.25rem;
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--primary-hover);
+}
+
+form a {
+    padding: 0.55rem 1rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+form a:hover {
+    background-color: #f1f5f9;
+    color: var(--text-main);
+}
+
+/* KPI Cards Grid */
+#container-kpis {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.container-kpi {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.container-kpi h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.container-kpi > p {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+/* Status Breakdown KPI Card */
+#container-kpis .container-kpi:nth-child(3) p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-main);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.15rem 0;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+#container-kpis .container-kpi:nth-child(3) p:last-child {
+    border-bottom: none;
+}
+
+/* Invalid Records KPI Card Accent */
+#total-invalids {
+    border-left: 4px solid var(--danger-text);
+}
+
+#total-invalids > p {
+    color: var(--danger-text);
+}
+
+/* Orders Table */
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    border: none;
+    background-color: var(--bg-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    font-size: 0.9rem;
+}
+
+thead {
+    background-color: #f1f5f9;
+    border-bottom: 2px solid var(--border-color);
+}
+
+th {
+    text-align: left;
+    padding: 0.9rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    border: none;
+}
+
+td {
+    padding: 0.85rem 1rem;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-main);
+    vertical-align: middle;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Invalid Rows */
+tr.invalid {
+    background-color: var(--danger-bg);
+    color: var(--danger-text);
+}
+
+tr.invalid:hover {
+    background-color: #fee2e2;
+}
+
+tr.invalid td {
+    color: var(--danger-text);
+    font-weight: 500;
+    border-bottom-color: var(--danger-border);
 }

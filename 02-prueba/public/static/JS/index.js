@@ -1,1 +1,1 @@
-console.log("Cargado");
+console.log("Cargado")
