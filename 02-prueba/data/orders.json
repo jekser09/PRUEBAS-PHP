@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ORD-1001",
+    "customer": "Elena Martínez",
+    "email": "elena.martinez@example.com",
+    "category": "Electronics",
+    "amount": 1249.99,
+    "status": "completed",
+    "created_at": "2026-03-01 09:15:22",
+    "notes": "Entrega en recepción corporativa antes de las 17:00."
+  },
+  {
+    "id": "ORD-1002",
+    "customer": "Carlos Mendoza",
+    "email": "c.mendoza@example.com",
+    "category": "Software",
+    "amount": 299.00,
+    "status": "completed",
+    "created_at": "2026-03-01 11:40:10",
+    "notes": "Licencia anual empresarial para 5 puestos."
+  },
+  {
+    "id": "ORD-1003",
+    "customer": "Lucía Fernández",
+    "email": "lucia.f@example.com",
+    "category": "Hardware",
+    "amount": 89.50,
+    "status": "pending",
+    "created_at": "2026-03-02 14:05:00",
+    "notes": null
+  },
+  {
+    "id": "ORD-1004",
+    "customer": "Javier Gómez",
+    "email": "jgomez@example.com",
+    "category": "Services",
+    "amount": 450.00,
+    "status": "completed",
+    "created_at": "2026-03-02 14:05:00",
+    "notes": "Consultoría de auditoría de seguridad cloud."
+  },
+  {
+    "id": "ORD-1005",
+    "customer": "Sofía Herrera",
+    "email": "sofia.herrera@example.com",
+    "category": "Electronics",
+    "amount": 320.75,
+    "status": "cancelled",
+    "created_at": "2026-03-03 08:20:45",
+    "notes": "Cancelado a solicitud del cliente por cambio de modelo."
+  },
+  {
+    "id": "ORD-1006",
+    "customer": "Diego Vargas",
+    "email": "diego.vargas@example.com",
+    "category": "Hardware",
+    "amount": -150.00,
+    "status": "completed",
+    "created_at": "2026-03-03 16:12:30",
+    "notes": "Registro migrado con error de signo en monto."
+  },
+  {
+    "id": "ORD-1007",
+    "customer": "Valentina Rojas",
+    "email": "vrojas@example.com",
+    "category": "Software",
+    "amount": 49.99,
+    "status": "refunded",
+    "created_at": "2026-03-04 10:00:00",
+    "notes": "Reembolso procesado por incompatibilidad de sistema operativo."
+  },
+  {
+    "id": "ORD-1008",
+    "customer": "Andrés Silva",
+    "email": "andres.silva@example.com",
+    "category": "Services",
+    "amount": 1800.00,
+    "status": "completed",
+    "created_at": "2026-03-04 13:55:19",
+    "notes": "Soporte dedicado trimestre Q1."
+  },
+  {
+    "id": "ORD-1009",
+    "customer": "Mariana Castro",
+    "email": "m.castro@example.com",
+    "category": "Electronics",
+    "amount": 0,
+    "status": "pending",
+    "created_at": "2026-03-05 09:30:00",
+    "notes": "Orden incompleta por fallo de pasarela de pagos."
+  },
+  {
+    "id": "ORD-1010",
+    "customer": "Roberto Navarro",
+    "email": "rnavarro@example.com",
+    "category": "Hardware",
+    "amount": 640.00,
+    "status": "completed",
+    "created_at": "2026-03-05 15:48:12",
+    "notes": "<script>alert('xss')</script> Reclamo urgente & prioritario"
+  },
+  {
+    "id": "ORD-1011",
+    "customer": "Paula Ríos",
+    "email": "paula.rios@example.com",
+    "category": "Software",
+    "amount": 199.00,
+    "status": "pending",
+    "created_at": "2026-03-06 11:10:05",
+    "notes": null
+  },
+  {
+    "id": "ORD-1012",
+    "customer": "Fernando Ortiz",
+    "email": "fortiz@example.com",
+    "category": "Electronics",
+    "amount": 899.90,
+    "status": "completed",
+    "created_at": "2026-03-06 17:25:40",
+    "notes": "Envío asegurado con firma requerida."
+  },
+  {
+    "id": "ORD-1013",
+    "customer": "Gabriela Morales",
+    "email": "gmorales@example.com",
+    "category": "Services",
+    "amount": 350.00,
+    "status": "cancelled",
+    "created_at": "2026-03-07 10:05:33",
+    "notes": null
+  },
+  {
+    "id": "ORD-1014",
+    "customer": "Héctor Paredes",
+    "email": "hparedes@example.com",
+    "category": "Hardware",
+    "amount": 1120.50,
+    "status": "completed",
+    "created_at": "2026-03-07 18:40:00",
+    "notes": "Servidor rack 2U + kit de rieles."
+  },
+  {
+    "id": "ORD-1015",
+    "customer": "Natalia Vega",
+    "email": "natalia.vega@example.com",
+    "category": "Software",
+    "amount": 79.00,
+    "status": "completed",
+    "created_at": "2026-03-08 12:00:00",
+    "notes": "Renovación automática de suscripción."
+  },
+  {
+    "id": "ORD-1016",
+    "customer": "Sebastián Luna",
+    "email": "sluna@example.com",
+    "category": "Electronics",
+    "amount": 215.25,
+    "status": "refunded",
+    "created_at": "2026-03-08 12:00:00",
+    "notes": "Devolución por empaque dañado en tránsito."
+  },
+  {
+    "id": "ORD-1017",
+    "customer": "Camila Soto",
+    "email": "camila.soto@example.com",
+    "category": "Services",
+    "amount": 950.00,
+    "status": "pending",
+    "created_at": "2026-03-09 09:45:10",
+    "notes": "Pendiente orden de compra del departamento financiero."
+  },
+  {
+    "id": "ORD-1018",
+    "customer": "Mateo Delgado",
+    "email": "mdelgado@example.com",
+    "category": "Hardware",
+    "amount": 410.00,
+    "status": "completed",
+    "created_at": "2026-03-09 16:30:55",
+    "notes": null
+  },
+  {
+    "id": "ORD-1019",
+    "customer": "Daniela Peña",
+    "email": "daniela.pena@example.com",
+    "category": "Electronics",
+    "amount": 1599.00,
+    "status": "completed",
+    "created_at": "2026-03-10 11:20:00",
+    "notes": "Cliente VIP - despacho prioritario 24h."
+  },
+  {
+    "id": "ORD-1020",
+    "customer": "Alejandro Acosta",
+    "email": "aacosta@example.com",
+    "category": "Software",
+    "amount": 129.50,
+    "status": "cancelled",
+    "created_at": "2026-03-10 14:15:00",
+    "notes": "Duplicado por error del usuario."
+  }
+]
