@@ -1,0 +1,22 @@
+# Composer dependencies (root and all challenge subdirectories)
+**/vendor/
+composer.phar
+
+# PHPUnit / Pest / Coverage caches and reports
+**/.phpunit.cache/
+**/.phpunit.result.cache
+**/coverage/
+**/.pest/
+
+# Environment and local configuration
+**/.env
+**/.env.local
+**/.env.*.local
+
+# IDE and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

@@ -1,0 +1,16 @@
+{
+    "name": "jekse/01-prueba",
+    "description": "Prueba de datdaset, ataques de ciberseguridad",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Johand Castro",
+            "email": "jekser09@gmail.com"
+        }
+    ],
+    "require": {}
+}
